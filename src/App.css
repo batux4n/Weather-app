@@ -1,0 +1,138 @@
+/* Global ayarlar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: background 2s ease-in-out; /* Geçiş süresi */
+  background-size: cover;
+}
+
+/* Güneşli arka plan */
+.sunny {
+  background: linear-gradient(135deg, #ffb347, #ffcc33); /* Güneşli arka plan */
+}
+
+/* Yağmurlu arka plan */
+.rainy {
+  background: linear-gradient(135deg, #4a90e2, #50a7e2); /* Yağmurlu arka plan */
+}
+
+/* Karlı arka plan */
+.snowy {
+  background: linear-gradient(135deg, #dbe5f2, #a6c1e3); /* Karlı arka plan */
+}
+
+/* Bulutlu arka plan */
+.cloudy {
+  background: linear-gradient(135deg, #c8d6e5, #8395a7); /* Bulutlu arka plan */
+}
+
+/* Sisli arka plan */
+.foggy {
+  background: linear-gradient(135deg, #f1f2f6, #a4b0be); /* Sisli arka plan */
+}
+
+/* Başlık */
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+/* Şehir input alanı */
+input[type="text"] {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  border: 2px solid #ccc;
+  margin-right: 10px;
+  width: 300px;
+  outline: none;
+}
+
+input[type="text"]:focus {
+  border-color: #4e5bff;
+}
+
+/* Buton */
+button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  background-color: #4e5bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3d4dff;
+}
+
+/* Hava durumu kartı */
+.weather-display {
+  margin-top: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 15px;
+  width: 80%;
+  max-width: 600px;
+}
+
+/* Animasyon bölmesi */
+.animation-container {
+  text-align: center;
+}
+
+/* Hava durumu bilgileri */
+.weather-info {
+  margin-top: 20px;
+}
+
+.weather-info h2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.weather-info p {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.weather-info i {
+  margin-right: 10px;
+  font-size: 1.5rem;
+  color: #007bff;
+}
+
+.weather-icon {
+  font-size: 2rem;
+  margin-left: 10px;
+}
+
+/* Responsive tasarım */
+@media (max-width: 768px) {
+  input[type="text"] {
+    width: 80%;
+  }
+
+  button {
+    width: 80%;
+  }
+
+  .weather-info {
+    width: 90%;
+  }
+}
